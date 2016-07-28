@@ -18,7 +18,7 @@
 - (instancetype)initWithBlock:(executor)aBlock {
     self = [super init];
     if (self) {
-        _block = aBlock;
+        _block = [aBlock copy];
     }
     return self;
 }
